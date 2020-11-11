@@ -3,18 +3,19 @@
 <html>
 <head>
     <title>List Customer</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 <body>
-<div id="wrapper">
-    <div id="header">
+<div id="wrapper" class="wrapper">
+    <div id="header" class="header-panel">
         <h2>CRM - Customer Relationship Manager</h2>
     </div>
 </div>
 
-<div id="container">
-    <div id="content">
+<div id="container" class="container">
+    <div id="content" class="content">
         <!-- add our html table -->
-        <table>
+        <table class="table table-striped">
             <tr>
                 <th>First Name</th>
                 <th>Last Name</th>
