@@ -32,7 +32,7 @@ public class CustomerController {
     }
 
     @GetMapping("/showFormForAdd")
-    public String showFormForAdd(Model theModel){
+    public String showFormForAdd(Model theModel) {
 
         // create model atribute to bind form data
         Customer theCustomer = new Customer();
@@ -40,8 +40,9 @@ public class CustomerController {
         theModel.addAttribute("customer", theCustomer);
         return "customer-form";
     }
+
     @PostMapping("/saveCustomer")
-    public String saveCustomer(@ModelAttribute("customer") Customer theCustomer){
+    public String saveCustomer(@ModelAttribute("customer") Customer theCustomer) {
 
         // save the customer usign our service
 
@@ -50,7 +51,7 @@ public class CustomerController {
     }
 
     @GetMapping("/showFormForUpdate")
-    public String showFormForUpdate (@RequestParam("customerId") int theId, Model theModel){
+    public String showFormForUpdate(@RequestParam("customerId") int theId, Model theModel) {
 
         // get the customer from the DB
         Customer theCustomer = customerService.getCustomer(theId);
@@ -71,4 +72,17 @@ public class CustomerController {
         return "redirect:/customer/list";
     }
 
+    @GetMapping("/search")
+    public String searchCustomers(@RequestParam("theSearchName") String theSearchName,
+                                  Model theModel) {
+
+        // search customers from the service
+        List<Customer> theCustomers = customerService.searchCustomers(theSearchName);
+
+        // add the customers to the model
+        theModel.addAttribute("customers", theCustomers);
+
+        return "list-customers";
+
+    }
 }
