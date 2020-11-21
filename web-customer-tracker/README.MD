@@ -9,7 +9,7 @@ The application allows you to add / edit / delete customers.
 <br>
 Search by first name or last name has been implemented. Also by name.
 <br>
-![alt text](https://github.com/Evgenij-Pavlenko/Projects/blob/main/web-customer-tracker/web_customer_tracker.jpg)
+![alt text](web_customer_tracker.jpg)
 
 
 
