@@ -9,7 +9,7 @@ The application allows you to add / edit / delete customers.
 <br>
 Search by first name or last name has been implemented. Also by name.
 <br>
-![alt text](https://photos.app.goo.gl/w6zwokbnP2SRqX5m9)
+![alt text](https://photos.app.goo.gl/w6zwokbnP2SRqX5m9?raw=true)
 
 
 
