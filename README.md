@@ -18,6 +18,9 @@
 
 <h2>course project</h2>
 <h3><b>1.</b>ImageProcessorMaven</h3>
+<br>
+<i>Maven, Mockito</i>
+<br>
 
 1. Application takes settings from test_images.csv ("url" and "action")<br>
 2. Download image from internet<br>
