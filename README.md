@@ -13,7 +13,7 @@
 4.Search by first name or last name has been implemented. Also by name.
 <br>
 5. Add Logging with Spring-AOP<br><br>
-![](https://github.com/Evgenij-Pavlenko/Projects/blob/main/screenshots/web_customer_tracker.jpg | weight = 250)
+![](https://github.com/Evgenij-Pavlenko/Projects/blob/main/screenshots/web_customer_tracker.jpg | weidth = 250)
 
 
 <h2>course project</h2>
@@ -27,5 +27,5 @@
 3. The application processes the downloaded image according to the settings<br>
 4. The application saves the processed image to disk<br>
 5. All test with Mockito<br><br>
-![](https://github.com/Evgenij-Pavlenko/Projects/blob/main/screenshots/ImageProcessorApplication.png |weight=250)
+![](https://github.com/Evgenij-Pavlenko/Projects/blob/main/screenshots/ImageProcessorApplication.png | width=250)
 
