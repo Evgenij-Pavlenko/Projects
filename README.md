@@ -27,5 +27,5 @@
 3. The application processes the downloaded image according to the settings<br>
 4. The application saves the processed image to disk<br>
 5. All test with Mockito<br><br>
-![](https://github.com/Evgenij-Pavlenko/Projects/blob/main/screenshots/ImageProcessorApplication.png | width=250)
+![](https://github.com/Evgenij-Pavlenko/Projects/blob/main/screenshots/ImageProcessorApplication.png)
 
