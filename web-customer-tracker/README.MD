@@ -1,7 +1,7 @@
 <h2>training Project</h2>
 <h3>web-customer-tracker</h3>
 <br>
-<i>Maven, Spring</i><br><br>
+<i>Maven, Spring, Spring MVC, Hibernate,</i><br><br>
 1. Lists customers on the start page.
 <br>
 2. The list is sorted by last name.
