@@ -13,8 +13,7 @@
 4.Search by first name or last name has been implemented. Also by name.
 <br>
 5. Add Logging with Spring-AOP<br><br>
-![](https://github.com/Evgenij-Pavlenko/Projects/blob/main/screenshots/WebCustomerTracker.png)
-
+<img src = "https://github.com/Evgenij-Pavlenko/Projects/blob/main/screenshots/WebCustomerTracker.jpg">
 
 <h2>course project</h2>
 <h3><b>1.</b>ImageProcessorMaven</h3>
