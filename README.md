@@ -13,7 +13,7 @@
 4.Search by first name or last name has been implemented. Also by name.
 <br>
 5. Add Logging with Spring-AOP<br><br>
-![](https://github.com/Evgenij-Pavlenko/Projects/blob/main/screenshots/WebCustomerTracker.jpg)
+![](https://github.com/Evgenij-Pavlenko/Projects/blob/main/screenshots/WebCustomerTracker.png)
 
 
 <h2>course project</h2>
