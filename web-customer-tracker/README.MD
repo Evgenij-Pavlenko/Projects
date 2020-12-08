@@ -11,8 +11,11 @@
 4.Search by first name or last name has been implemented. Also by name.
 <br>
 5. Add Logging with Spring-AOP<br><br>
-![WebCustomerTracker](https://github.com/Evgenij-Pavlenko/Projects/blob/main/screenshots/WebCustomerTracker.jpg)
-![WebCustomerTracker-Save-Update](https://github.com/Evgenij-Pavlenko/Projects/blob/main/screenshots/WebCustomerTracker-Save-Update.png)
+<hr>Start page - list Customers displayed<hr>
+<img src="https://github.com/Evgenij-Pavlenko/Projects/blob/main/screenshots/WebCustomerTracker.jpg"> 
+<hr>Add / Update Customer page<hr>
+<img src="https://github.com/Evgenij-Pavlenko/Projects/blob/main/screenshots/WebCustomerTracker-Save-Update.png">
+
 
 
 
