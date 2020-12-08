@@ -1,9 +1,8 @@
 # Projects
 
-<h2>training project</h2>
-<h3>1. web-customer-tracker-aop</h3>
+<h3>1. web-customer-tracker</h3>
 <br>
-<i>Maven, Spring, Spring-AOP</i><br><br>
+<i>Java 8, Maven, Hibernate, Spring MVC, Spring-AOP</i><br><br>
 1. Lists customers on the start page.
 <br>
 2. The list is sorted by last name.
@@ -13,10 +12,11 @@
 4.Search by first name or last name has been implemented. Also by name.
 <br>
 5. Add Logging with Spring-AOP<br><br>
+<hr>Start page - list Customers displayed<hr>
 <img src = "https://github.com/Evgenij-Pavlenko/Projects/blob/main/screenshots/WebCustomerTracker.jpg">
 
 <h2>course project</h2>
-<h3><b>1.</b>ImageProcessorMaven</h3>
+<h3>1. ImageProcessorMaven</h3>
 <br>
 <i>Maven, Mockito</i>
 <br>
