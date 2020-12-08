@@ -1,5 +1,5 @@
 <h2>training Project</h2>
-<h3>web-customer-tracker-aop</h3>
+<h3>web-customer-tracker</h3>
 <br>
 <i>Java 8, Maven, Hibernate, Spring MVC, Spring-AOP</i><br><br>
 1. Lists customers on the start page.
