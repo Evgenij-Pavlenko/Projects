@@ -23,7 +23,7 @@
 
         <!-- put new button: Add Customer -->
         <div class="section">
-            <input type="button" class="btn btn-primary add-button" value="Add Customer"
+            <input type="button" class="btn btn-primary my-button" value="Add Customer"
                    onclick="window.location.href='showFormForAdd'; return false;"
             />
         </div>
@@ -31,7 +31,7 @@
         <div class="section">
             <form:form action="search" method="GET">
                 Search customer: <input type="text" name="theSearchName"/>
-                <input type="submit" value="Search" class="btn btn-primary add-button"/>
+                <input type="submit" value="Search" class="btn btn-primary my-button"/>
             </form:form>
         </div>
         <!-- add our html table -->
