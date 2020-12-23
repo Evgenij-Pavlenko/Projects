@@ -1,6 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="security" uri="http://www.springframework.org/security/tags" %>
 <html>
 <head>
     <title>List Customer</title>
@@ -21,12 +22,15 @@
 <div class="container" id="container">
     <div class="content" id="content">
 
-        <!-- put new button: Add Customer -->
-        <div class="section">
-            <input type="button" class="btn btn-primary my-button" value="Add Customer"
-                   onclick="window.location.href='showFormForAdd'; return false;"
-            />
-        </div>
+        <security:authorize access="hasAnyRole('MANAGER', 'ADMIN')">
+            <!-- put new button: Add Customer -->
+            <div class="section">
+                <input type="button" class="btn btn-primary my-button" value="Add Customer"
+                       onclick="window.location.href='showFormForAdd'; return false;"
+                />
+            </div>
+        </security:authorize>
+
         <!--  add a search box -->
         <div class="section">
             <form:form action="search" method="GET">
@@ -61,11 +65,15 @@
                     <td> ${tempCustomer.email} </td>
 
                     <td>
+                        <security:authorize access="hasAnyRole('MANAGER', 'ADMIN')">
                         <!-- display the update link -->
                         <a href="${updateLink}">Update</a>
+                        </security:authorize>
                         |
+                        <security:authorize access="hasRole('ADMIN')">
                         <a href="${deleteLink}"
                            onclick="if (!(confirm('Are you sure you want to delete this customer?'))) return false">Delete</a>
+                        </security:authorize>
                     </td>
 
                 </tr>
