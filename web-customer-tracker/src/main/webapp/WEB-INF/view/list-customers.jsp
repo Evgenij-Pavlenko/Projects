@@ -13,13 +13,13 @@
           href="${pageContext.request.contextPath}/resources/css/style.css">
 </head>
 <body>
-<div class="wrapper" id="wrapper">
-    <div class="header-panel" id="header">
-        <h2>CRM - Customer Relationship Manager</h2>
-    </div>
-</div>
-
 <div class="container" id="container">
+    <div id="wrapper">
+        <div id="header">
+            <h2>CRM - Customer Relationship Manager</h2>
+        </div>
+    </div>
+
     <div class="content" id="content">
 
         <security:authorize access="hasAnyRole('MANAGER', 'ADMIN')">
@@ -44,7 +44,12 @@
                 <th>First Name</th>
                 <th>Last Name</th>
                 <th>Email</th>
-                <th>Action</th>
+                <!-- Only show "Action" column for managers or admin -->
+                <security:authorize access="hasAnyRole('MANAGER', 'ADMIN')">
+
+                    <th>Action</th>
+
+                </security:authorize>
             </tr>
             <!-- loop over and print our customers -->
             <c:forEach var="tempCustomer" items="${customers}">
@@ -64,23 +69,36 @@
                     <td> ${tempCustomer.lastName} </td>
                     <td> ${tempCustomer.email} </td>
 
-                    <td>
-                        <security:authorize access="hasAnyRole('MANAGER', 'ADMIN')">
-                        <!-- display the update link -->
-                        <a href="${updateLink}">Update</a>
-                        </security:authorize>
-                        |
-                        <security:authorize access="hasRole('ADMIN')">
-                        <a href="${deleteLink}"
-                           onclick="if (!(confirm('Are you sure you want to delete this customer?'))) return false">Delete</a>
-                        </security:authorize>
-                    </td>
-
+                    <security:authorize access="hasAnyRole('MANAGER', 'ADMIN')">
+                        <td>
+                                <%--                                <security:authorize access="hasAnyRole('MANAGER', 'ADMIN')">--%>
+                            <!-- display the update link -->
+                            <a href="${updateLink}">Update</a>
+                                <%--                                </security:authorize>--%>
+                            <security:authorize access="hasRole('ADMIN')">
+                                |
+                                <a href="${deleteLink}"
+                                   onclick="if (!(confirm('Are you sure you want to delete this customer?'))) return false">Delete</a>
+                            </security:authorize>
+                        </td>
+                    </security:authorize>
                 </tr>
 
             </c:forEach>
         </table>
+
+        <!-- Add a logout button -->
+        <form:form action="${pageContext.request.contextPath}/logout"
+                   method="POST">
+
+            <input type="submit" value="Logout" class="btn btn-primary add-button"/>
+
+        </form:form>
+        <div>
+            <a href="${pageContext.request.contextPath}/register/showRegistrationForm" class="btn btn-primary" role="button" aria-pressed="true">Register New User</a>
+        </div>
     </div>
+
 </div>
 </body>
 </html>

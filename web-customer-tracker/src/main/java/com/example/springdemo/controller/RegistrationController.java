@@ -1,6 +1,6 @@
 package com.example.springdemo.controller;
 
-import com.luv2code.springdemo.user.CrmUser;
+import com.example.springdemo.user.CrmUser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.propertyeditors.StringTrimmerEditor;
 import org.springframework.security.core.GrantedAuthority;
