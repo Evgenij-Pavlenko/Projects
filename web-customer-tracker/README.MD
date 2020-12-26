@@ -2,7 +2,7 @@
 <h3>web-customer-tracker</h3>
 <br>
 
-<i>Java 8, Maven, Hibernate, Spring MVC, Spring-AOP, Spring-Security</i><br><br>
+<i>Java 8, Maven, Hibernate, Spring MVC, Spring-AOP, Spring-Security, JSP</i><br><br>
 1. Login user on the start page
 2. Lists customers on the page.
 <br>
