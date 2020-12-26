@@ -12,6 +12,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Reference Bootstrap files -->
+    <link type="text/css" rel="stylesheet"
+          href="${pageContext.request.contextPath}/resources/css/style.css">
+    <link type="text/css" rel="stylesheet"
+          href="${pageContext.request.contextPath}/resources/css/add-customer-style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
           integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/834c81cda6.js" crossorigin="anonymous"></script>
@@ -20,10 +24,10 @@
 
 <body>
 
-<div>
+<div class="container">
 
     <div id="loginbox" style="margin-top: 50px;"
-         class="container col-md-3 col-md-offset-2 col-sm-6 col-sm-offset-2">
+         class="container col-md-4 col-md-offset-2 col-sm-6 col-sm-offset-2">
 
         <div class="card card-info border-info">
 
@@ -39,7 +43,7 @@
 
                     <!-- Place for messages: error, alert etc ... -->
                     <div class="form-group">
-                        <div class="col-xs-15">
+                        <div class="col-xs-5">
                             <div>
                                 <!-- Check for login error! -->
                                 <c:if test="${param.error != null}">

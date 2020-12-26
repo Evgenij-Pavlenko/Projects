@@ -4,15 +4,15 @@
 <head>
     <title>Save Customer</title>
     <!-- reference our style sheet -->
-    <%--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"--%>
-    <%--          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">--%>
     <link type="text/css" rel="stylesheet"
           href="${pageContext.request.contextPath}/resources/css/style.css">
     <link type="text/css" rel="stylesheet"
           href="${pageContext.request.contextPath}/resources/css/add-customer-style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 </head>
 <body>
-<div class="wrapper" id="wrapper">
+<div class="wrapper container" id="wrapper">
     <div class="header-panel" id="header">
         <h2>CRM - Customer Relationship Manager</h2>
     </div>
@@ -48,14 +48,9 @@
         </table>
     </form:form>
 
-    <%--    <div style="clear: both;"></div>--%>
-
-<%--    <p>--%>
-<%--        <a href="${pageContext.request.contextPath}/customer/list">Back to list</a>--%>
-<%--    </p>--%>
     <div class="section">
         <input type="button" class="btn btn-primary my-button" value="Back to list"
-               onclick="window.location.href='list'; return false;"
+               onclick="window.location.href='list'"
         />
     </div>
 </div>
