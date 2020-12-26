@@ -2,18 +2,29 @@
 
 <h3>1. web-customer-tracker</h3>
 <br>
-<i>Java 8, Maven, Hibernate, Spring MVC, Spring-AOP</i><br><br>
-1. Lists customers on the start page.
+<i>Java 8, Maven, Hibernate, Spring MVC, Spring-AOP, Spring-Security</i><br><br>
+1. Login user on the start page.
+<br>
+1. Lists customers on the page.
+<br>
+<ul>
+ <li>Role Employee - can see the list of customers and search for a customer</li>
+ <li>Role Manager - can update customer</li>
+ <li>Role Admin - can delete customers</li>
+ </ul>
 <br>
 2. The list is sorted by last name.
 <br>
-3.The application allows you to add / edit / delete customers.
+3. The application allows you to add / edit / delete customers.
 <br>
-4.Search by first name or last name has been implemented. Also by name.
+4. Search by first name or last name has been implemented. Also by name.
 <br>
-5. Add Logging with Spring-AOP<br><br>
-<hr>Start page - list Customers displayed<hr>
-<img src = "https://github.com/Evgenij-Pavlenko/Projects/blob/main/screenshots/WebCustomerTracker.jpg">
+5. Add Logging with Spring-AOP
+<br>
+6. Register new user, as Employee
+<br><br>
+<hr>List Customers displayed<hr>
+<img src = "https://github.com/Evgenij-Pavlenko/Projects/blob/main/screenshots/EnterAdmin.png">
 
 <h2>course project</h2>
 <h3>1. ImageProcessorMaven</h3>
